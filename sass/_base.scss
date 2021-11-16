@@ -30,5 +30,5 @@ body {
 .container {
   display: grid;
   grid-template-columns: 10rem 1fr 10rem;
-  grid-template-rows: 15vh 85vh repeat(6, min-content);
+  grid-template-rows: 12vh 88vh repeat(6, min-content);
 }

@@ -1,0 +1,13 @@
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-20rem);
+  }
+
+  50% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

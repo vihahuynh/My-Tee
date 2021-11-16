@@ -1,0 +1,15 @@
+.heading-1 {
+  color: $color-primary-dark;
+  font-size: 8rem;
+  letter-spacing: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  animation: moveToRight 1s ease-out;
+}
+
+.heading-3 {
+  color: $color-primary-dark;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  animation: moveToRight 1.5s ease-out;
+}

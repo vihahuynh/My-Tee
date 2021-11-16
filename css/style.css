@@ -1,3 +1,11 @@
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-20rem); }
+  50% {
+    transform: translateX(2rem); }
+  100% {
+    transform: translateX(0); } }
+
 *,
 *::before,
 *::after {
@@ -17,7 +25,36 @@ body {
 .container {
   display: grid;
   grid-template-columns: 10rem 1fr 10rem;
-  grid-template-rows: 15vh 85vh repeat(6, min-content); }
+  grid-template-rows: 12vh 88vh repeat(6, min-content); }
+
+.heading-1 {
+  color: #2a324b;
+  font-size: 8rem;
+  letter-spacing: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  animation: moveToRight 1s ease-out; }
+
+.heading-3 {
+  color: #2a324b;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  animation: moveToRight 1.5s ease-out; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 6rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-tiny {
+  margin-bottom: 1rem; }
 
 .best-sellers {
   padding: 10rem 0;
@@ -44,10 +81,31 @@ body {
   grid-column: 2 / 3; }
 
 .header {
-  background-color: #f2f3f8;
   padding: 10rem 0;
   grid-row: 2 / 3;
-  grid-column: 1 / -1; }
+  grid-column: 1 / -1;
+  background-image: linear-gradient(to right, rgba(242, 243, 248, 0.3), rgba(242, 243, 248, 0.3)), url(../img/tea-bg-4.jpg);
+  background-size: cover;
+  position: relative; }
+  .header__text-box {
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .header__icons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    right: 3rem; }
+  .header__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #2a324b; }
+    .header__icon:not(:last-child) {
+      margin-bottom: 2rem; }
 
 .navigation {
   background-color: #fff;

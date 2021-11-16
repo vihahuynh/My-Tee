@@ -31,11 +31,17 @@
   }
 
   &__icon {
+    transition: all 0.2s;
+
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
     height: 1.5rem;
     width: 1.5rem;
     fill: $color-primary-dark;
+
+    &:hover {
+      transform: scale(1.4);
+    }
   }
 }

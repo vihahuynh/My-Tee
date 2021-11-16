@@ -8,6 +8,11 @@
   margin: 6rem 0;
   transition: all 0.2s;
 
+  &--square {
+    border-radius: 0;
+    margin: 2rem 0;
+  }
+
   &:hover {
     box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.2);
     transform: translateY(-3px);

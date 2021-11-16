@@ -1,5 +1,5 @@
 .best-sellers {
-  padding: 10rem 0;
+  padding: 5rem 0;
   grid-row: 4 / 5;
   grid-column: 2 / 3;
   text-align: center;
@@ -14,7 +14,7 @@
 .item {
   background-color: $color-primary-light;
   position: relative;
-  border-radius: 0.5rem;
+  // border-radius: 0.5rem;
   overflow: hidden;
   transition: all 0.3s;
 

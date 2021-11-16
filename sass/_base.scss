@@ -6,6 +6,8 @@ $color-secondary-yellow: #f4da9d;
 $color-secondary-pink: #fec0c8;
 $color-secondary-green: #d1e0dd;
 
+$color-white: #fff;
+
 *,
 *::before,
 *::after {
@@ -20,7 +22,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-size: 1.4;
+  font-size: 1.4rem;
   font-weight: 300;
   font-family: "Lato", sans-serif;
 }
@@ -28,5 +30,5 @@ body {
 .container {
   display: grid;
   grid-template-columns: 10rem 1fr 10rem;
-  grid-template-rows: 10vh 90vh repeat(6, min-content);
+  grid-template-rows: 15vh 85vh repeat(6, min-content);
 }

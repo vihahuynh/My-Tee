@@ -1,6 +1,128 @@
 .best-sellers {
   padding: 10rem 0;
-  background-color: $color-secondary-green;
   grid-row: 4 / 5;
   grid-column: 2 / 3;
+  text-align: center;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+}
+
+.item {
+  background-color: $color-primary-light;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 2rem 4rem rgba($color-primary-dark, 0.2);
+  }
+
+  &__image {
+    margin: 25%;
+    width: 50%;
+  }
+
+  &__icon-box,
+  &__cart-box {
+    border-radius: 50%;
+    position: absolute;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.3s;
+  }
+
+  &__icon-box {
+    background-color: $color-secondary-yellow;
+    top: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-primary-dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--new {
+      background-color: $color-secondary-green;
+    }
+
+    &--discount {
+      background-color: $color-secondary-pink;
+    }
+  }
+
+  &:hover &__cart-box {
+    opacity: 1;
+  }
+
+  &__cart-box {
+    background-color: $color-primary-dark;
+    bottom: 1.5rem;
+    opacity: 0;
+
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.2);
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      box-shadow: 0 0.5rem 1rem rgba($color-primary-dark, 0.2);
+      transform: translateY(0);
+    }
+  }
+
+  &__icon,
+  &__cart-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $color-primary-light;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  &__details {
+    text-align: start;
+    height: 10rem;
+    font-weight: 700;
+    padding: 2rem;
+    background-color: $color-white;
+    color: $color-primary-dark;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name {
+    text-transform: uppercase;
+
+    font-size: 1.4rem;
+  }
+
+  &__weight {
+    font-size: 1.2rem;
+  }
+
+  &__price-box {
+    font-size: 1.2rem;
+    color: $color-primary;
+    display: flex;
+  }
+
+  &__price {
+    margin-right: 2rem;
+    &--old {
+      text-decoration: line-through;
+    }
+    &--discount {
+      color: rgba(red, 0.8);
+    }
+  }
 }

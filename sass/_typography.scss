@@ -7,6 +7,14 @@
   animation: moveToRight 1s ease-out;
 }
 
+.heading-2 {
+  color: $color-primary-dark;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
 .heading-3 {
   color: $color-primary-dark;
   font-size: 2rem;

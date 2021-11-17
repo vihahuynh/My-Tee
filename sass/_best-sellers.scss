@@ -19,6 +19,7 @@
   transition: all 0.3s;
 
   &:hover {
+    transform: translateY(-0.7rem);
     box-shadow: 0 2rem 4rem rgba($color-primary-dark, 0.2);
   }
 

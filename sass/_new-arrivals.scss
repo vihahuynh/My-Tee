@@ -1,6 +1,62 @@
 .new-arrivals {
-  padding: 10rem 0;
-  background-color: $color-secondary-pink;
+  padding: 5rem 0;
   grid-row: 3 / 4;
   grid-column: 2 / 3;
+  text-align: center;
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, minmax(4rem, min-content));
+    grid-gap: 1.5rem;
+  }
+
+  &__box {
+    text-align: start;
+    position: relative;
+    &--pink {
+      grid-row: 7 / -1;
+      grid-column: 1 / 2;
+      padding: 6rem 3rem 3rem;
+      background-image: url(../img/tea-spoon-new.png),
+        linear-gradient(to right, $color-secondary-pink, $color-secondary-pink);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--grey-flat {
+      background-image: url(../img/tea-gift.png),
+        linear-gradient(to right, $color-primary-light, $color-primary-light);
+      background-size: cover;
+      background-position: center;
+      grid-row: 1 / 7;
+      grid-column: 1 / 2;
+    }
+
+    &--yellow {
+      background-image: url(../img/teabloom.png),
+        linear-gradient(
+          to right,
+          $color-secondary-yellow,
+          $color-secondary-yellow
+        );
+      background-position: center;
+      background-size: cover;
+      grid-row: 1 / 5;
+      grid-column: 2 / 3;
+    }
+
+    &--grey {
+      background-image: url(../img/tea-set.png),
+        linear-gradient(
+          to right bottom,
+          rgba($color-primary, 0.3),
+          $color-primary-light
+        );
+      background-size: cover;
+      background-position: center;
+      grid-row: 5 / -1;
+      grid-column: 2 / 3;
+    }
+  }
 }

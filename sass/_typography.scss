@@ -16,6 +16,7 @@
 }
 
 .heading-3 {
+  text-transform: uppercase;
   color: $color-primary-dark;
   font-size: 2rem;
   letter-spacing: 0.5rem;
@@ -28,4 +29,11 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   line-height: 1.2;
+}
+
+.heading-5 {
+  color: $color-primary-dark;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }

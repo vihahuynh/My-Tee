@@ -1,0 +1,45 @@
+.blogs {
+  padding: 5rem 0;
+  grid-column: 2 / -3;
+  grid-row: 6 / 7;
+  position: relative;
+  text-align: center;
+
+  &__text {
+    margin: 3rem auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    width: 58%;
+  }
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(35rem, min-content);
+    grid-gap: 1.5rem;
+  }
+
+  &__box {
+    text-align: start;
+    position: relative;
+    &--pink {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      padding: 6rem 3rem 3rem;
+      background-image: url(../img/tea-blog-2.png),
+        linear-gradient(to right, $color-secondary-pink, $color-secondary-pink);
+      background-size: cover;
+      background-position: center;
+    }
+
+    &--grey {
+      background-image: url(../img/tea-blog-1.png),
+        linear-gradient(to right, $color-primary-light, $color-primary-light);
+      background-size: cover;
+      background-position: center;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+  }
+}

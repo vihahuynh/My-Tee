@@ -398,12 +398,12 @@ body {
   .footer__icons {
     display: flex; }
   .footer__icon {
-    transition: all 0.2s;
-    height: 1.5rem;
-    width: 1.5rem;
+    transition: all 0.3s;
+    height: 2.5rem;
+    width: 2.5rem;
     fill: #2a324b; }
     .footer__icon:not(:last-child) {
-      margin-right: 2.5rem; }
+      margin-right: 3rem; }
     .footer__icon:hover {
       transform: scale(1.4); }
   .footer__menu {
@@ -559,12 +559,12 @@ body {
     transform: translateY(-50%);
     right: 3rem; }
   .header__icon {
-    transition: all 0.2s;
-    height: 1.5rem;
-    width: 1.5rem;
+    transition: all 0.3s;
+    height: 2.5rem;
+    width: 2.5rem;
     fill: #2a324b; }
     .header__icon:not(:last-child) {
-      margin-bottom: 2rem; }
+      margin-bottom: 3rem; }
     .header__icon:hover {
       transform: scale(1.4); }
 

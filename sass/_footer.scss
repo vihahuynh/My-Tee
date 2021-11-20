@@ -16,13 +16,13 @@
   }
 
   &__icon {
-    transition: all 0.2s;
+    transition: all 0.3s;
 
     &:not(:last-child) {
-      margin-right: 2.5rem;
+      margin-right: 3rem;
     }
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     fill: $color-primary-dark;
 
     &:hover {
